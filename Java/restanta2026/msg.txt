@@ -1,0 +1,28 @@
+INCIDENT REPORT
+
+Incident ID: INC-2025-0617
+Classification: Confidential
+
+On 14 June 2025, the Security Operations Center detected multiple unauthorized login attempts against the company's VPN gateway originating from the IP address 185.44.21.17.
+
+The attacker successfully authenticated using credentials belonging to employee john.doe@cyberdefense.local. Further investigation revealed that the credentials had been obtained through a phishing campaign conducted two days earlier.
+
+The attacker accessed the internal Git repository and downloaded several source code archives related to the Secure Payment Platform project. No evidence of source code modification was identified.
+
+Affected systems:
+- VPN-GW-01
+- GIT-SRV-02
+- AD-DC-01
+
+Immediate actions:
+1. Disable compromised account.
+2. Force password reset for all users.
+3. Revoke active VPN sessions.
+4. Enable enhanced monitoring for critical servers.
+
+Prepared by:
+Alice Popescu
+Senior Security Analyst
+
+Date:
+17 June 2025
